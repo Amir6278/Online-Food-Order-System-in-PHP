@@ -1,0 +1,319 @@
+a {
+    text-decoration: none;
+}
+
+.order {
+    position: absolute;
+    bottom: 30%;
+    left: 30%;
+}
+
+.user_part {
+    text-align: center;
+    padding: 20px 0px 0px;
+    border-bottom: 1px solid black;
+    margin: 0px -15px;
+}
+
+.user_part img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.user_part h4 {
+    color: #ccc;
+    font-size: 14px;
+    line-height: 15px;
+    margin-top: 5px;
+}
+
+.user_part p {
+    color: #ccc;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.user_part i {
+    color: green;
+}
+
+
+/* Front part banner CSS */
+
+.banner {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.banner::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.banner img {
+    display: block;
+    width: 100%;
+    min-height: 100vh;
+    object-fit: cover;
+}
+
+.banner-text-div {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: fit-content;
+    font-family: monospace;
+    cursor: pointer;
+    transition: .5s;
+    color: #111;
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 40px 30px;
+    border-radius: 10px;
+    border: none;
+    text-shadow: 1px 1px 1px #000;
+    box-shadow: 1px 1px 10px #000;
+}
+
+.banner-text-div:hover .bannerbtn {
+    background: orange;
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.banner-text-div h1 {
+    font-size: 65px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.banner-text-div h5 {
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 3rem;
+}
+
+.bannerbtn {
+    position: relative;
+    padding: 22px 45px;
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 25px;
+    color: #111;
+    border: 1px solid #111;
+    transition: .9s;
+    z-index: 1;
+    font-family: cursive;
+}
+
+.bannerbtn::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 100%;
+    background-color: rgba(150, 58, 58, 0.6);
+    position: absolute;
+    border-radius: 25px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    visibility: hidden;
+    transition: .9s;
+}
+
+.bannerbtn:hover::after {
+    visibility: visible;
+    width: 100%;
+    opacity: 1;
+    font-size: inherit;
+}
+
+
+/* .userMenu {}
+
+.userMenu .navbar-brand {}
+
+.userMenu .nav-item {} */
+
+.userMenu .nav-link {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    transition: .4s;
+}
+
+.nav-link:hover {
+    color: coral !important;
+    transform: scale(1.04);
+}
+
+.coupon-banner {
+    height: 50vh;
+    background: url("https://source.unsplash.com/1600x900/?resturant,dish");
+    background-size: cover;
+    font-family: cursive;
+    position: relative;
+    z-index: 1;
+    ;
+}
+
+.coupon-banner::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.coupon-banner h4 {
+    width: fit-content;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 1em auto;
+    padding: 15px 5px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.493);
+    word-spacing: 5px;
+}
+
+.list-group .list-group-item {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+.mycard {
+    max-width: 100%;
+    max-height: 400px;
+    background: #dddddd;
+    padding: 5px;
+    border: 1px solid #ddd;
+    max-width: 100%;
+    box-shadow: 2px 3px 11px rgba(245, 171, 53, .5);
+}
+
+.body::after {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.mycard h6 {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: cursive;
+}
+
+.mycard a:hover {
+    transform: scaleX(1.03);
+}
+
+
+/* Registratio page Design */
+
+.center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.myrow {
+    background: white;
+    padding: 20px 20px;
+    margin-top: 10px;
+    border: 2px solid #ddd;
+    max-width: max-content;
+    border-radius: 15px;
+}
+
+.myrow h3 {
+    font-weight: 700;
+    font-family: monospace;
+    font-size: 28px;
+    text-shadow: 3px 5px 10px rgba(0, 0, 0, 0.8);
+}
+
+.myrow input {
+    padding: 10px 12px;
+    font-size: 14px;
+    font-weight: 600;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 4px 4px 2px #fff;
+    display: inline-block;
+}
+
+.myrow input:focus {
+    letter-spacing: 2px;
+    box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.8);
+    color: #000;
+    background: whitesmoke;
+    border-color: gray;
+}
+
+.logout {
+    position: absolute;
+    right: 0px;
+}
+
+.myrow span i {
+    font-size: 20px;
+    color: gray;
+    transform: translateX(-10%);
+}
+
+
+/* Button Styles */
+
+.rmybtn {
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+    border-radius: 10px;
+    padding: 5px 0;
+}
+
+.rmybtn::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    transition: 1.8s ease;
+    border-radius: 10px;
+}
+
+.rmybtn:hover::after {
+    width: 100%;
+}
+
+.rmybtn:hover {
+    transform: scaleY(1.001);
+    letter-spacing: 4px;
+    box-shadow: 2px 3px 5px #111;
+}

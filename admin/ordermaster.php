@@ -33,7 +33,7 @@ if (!$_SESSION['loggedIn']) {
          if($_GET['type'] == 'deleteOrder')
          {
           
-            mysqli_query($connection,"DELETE FROM `order_detail` WHERE `order_id` = '$Id' ");
+            mysqli_query($connection,"DELETE FROM `order_detail` WHERE `od_id` = '$Id' ");
             echo '<script type="text/javascript"> window.location="ordermaster.php";</script>';
          }
             

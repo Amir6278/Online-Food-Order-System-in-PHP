@@ -270,7 +270,7 @@ echo '<tr>
             <?php
         
         $product_dish_id ="";
-              $product_sql = "SELECT * FROM `dish` WHERE 1 ";
+              $product_sql = "SELECT * FROM `dish` WHERE `status`= '1' ";
               
    if(isset($_GET['cat_dis']) && $_GET['cat_dis']!=''){
        

@@ -44,7 +44,7 @@ $carttotal = 0;
 if(isset($_SESSION['userId'])){
     $userId = $_SESSION['userId'];
 
-    $oldOrder =   mysqli_query($connection,"SELECT * FROM `order_detail`  WHERE `user_id`= '$userId' AND `order_status` = '0' OR `order_status` = '1' OR  `order_status` = '2'  ");
+    $oldOrder =   mysqli_query($connection,"SELECT * FROM `order_detail`  WHERE `user_id`= '$userId' ");
     $numOrder = mysqli_num_rows($oldOrder);
     if( $numOrder > 0){
        $order =  mysqli_fetch_assoc($oldOrder);

@@ -167,7 +167,7 @@ if($alert){
 
                     <?php
 
-$sql = "SELECT * FROM `order_detail` INNER JOIN `dish_detail` , `dish` , `user` WHERE user.id = order_detail.user_id AND dish_detail.id = order_detail.dish_detail_id AND dish_detail.dish_id = dish.id  ";
+$sql = "SELECT * FROM `order_detail` INNER JOIN `dish_detail` , `dish` , `user` WHERE user.id = order_detail.user_id AND dish_detail.id = order_detail.dish_detail_id AND dish_detail.dish_id = dish.id ORDER BY order_detail.od_id DESC ";
 $result = mysqli_query($connection, $sql);
 $numRow = mysqli_num_rows($result);
 

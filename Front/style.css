@@ -197,7 +197,7 @@ a {
 
 .mycard {
     max-width: 100%;
-    max-height: 400px;
+/*     max-height: 400px; */
     background: #dddddd;
     padding: 5px;
     border: 1px solid #ddd;

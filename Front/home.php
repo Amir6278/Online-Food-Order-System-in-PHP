@@ -356,7 +356,7 @@ echo '<tr>
   </form>  
 
     <!-- pagination -->
-   <div class="container d-flex justify-content-center">
+<!--    <div class="container d-flex justify-content-center">
    <div class="text-center">
         <nav aria-label="Page navigation text-center example">
             <ul class="pagination">
@@ -369,7 +369,7 @@ echo '<tr>
         </nav>
     </div>
    </div>
-
+ -->
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->

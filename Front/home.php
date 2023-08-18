@@ -320,7 +320,7 @@ echo '<tr>
                         <button type="submit" class="btn btn-primary w-75 fw-bold mb-1 " id="addcart" name="addcart" value="added"> <i class="fas fa-cart-plus"></i> Add to Cart</button></div>
 
                           </form>
-                        <div class="row"><a href= " productdetail.php/productId='. $product_dish_id . '" class="btn btn-outline-info w-100 text-dark fw-bold"  target="_blank"  >View dish</a></div>
+                        <div class="row"><a href= " productdetail.php/?productId='. $product_dish_id . '" class="btn btn-outline-info w-100 text-dark fw-bold"  target="_blank"  >View dish</a></div>
                      </div>
                  </div> </div>';
           
